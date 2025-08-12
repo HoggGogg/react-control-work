@@ -1,4 +1,3 @@
-// src/containers/MoviesPage.tsx  
 import React, { useEffect, useState } from 'react';
 import { type Genre, getGenres, getMovies, type Movie } from '../api/moviesApi';
 import MoviesList from '../components/MoviesList';
@@ -19,15 +18,17 @@ const MoviesPage: React.FC = () => {
         const loadGenres = async () => {
             try {
                 const g = await getGenres();
-                setGenres(genres);
+                setGenres(g);
                 const map: GenreMap = {};
-                g.forEach((gg) => (map[gg.id] = gg.name));
+                genres.forEach((gg) => {
+                    map[gg.id] = gg.name;
+                });
                 setGenreMap(map);
             } catch (e) {
                 console.error('Failed to load genres', e);
             }
         };
-        loadGenres()
+        loadGenres();
     }, []);
 
     // Загрузка фильмов

@@ -1,18 +1,15 @@
 import React from 'react';
 
-type Props = {
-    name: string;
-};
+type Props = { name: string };
 
 const GenreBadge: React.FC<Props> = ({ name }) => (
     <span
         style={{
-            display: 'inline-block',
-            padding: '2px 8px',
+            padding: '4px 8px',
+            marginRight: 6,
             borderRadius: 12,
             background: '#eee',
             fontSize: 12,
-            marginRight: 6,
         }}
     >
     {name}
