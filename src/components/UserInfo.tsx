@@ -9,11 +9,11 @@ const UserInfo: React.FC = () => {
                     width: 34,
                     height: 34,
                     borderRadius: 999,
-                    background: '#6b9dfc',
+                    background: '#d85353',
                     display: 'inline-block',
                 }}
             />
-            <span style={{ color: '#fff' }}>Alex</span>
+            <span style={{ color: '#fff' }}>Pretty Man</span>
         </div>
     );
 };

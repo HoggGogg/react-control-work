@@ -68,5 +68,5 @@ export default tseslint.config([
 ])
 ```
 VITE_API_BASE=https://api.themoviedb.org/3
-VITE_API_KEY=https://api.themoviedb.org/3/discover/movie
+VITE_API_KEY=VITE_API_KEY=13ac19dab796116248d9bbde30de4466
 VITE_LANGUAGE=en-US

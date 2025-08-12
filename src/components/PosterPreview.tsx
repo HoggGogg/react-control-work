@@ -5,7 +5,7 @@ const PosterPreview: React.FC<Props> = ({ posterPath, title }) => (
     <div
         style={{
             height: 320,
-            background: '#f0f0f0',
+            background: '#672727',
             display: 'flex',
             alignItems: 'center',
             justifyContent: 'center',

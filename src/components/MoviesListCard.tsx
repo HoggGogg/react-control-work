@@ -24,11 +24,11 @@ const MoviesListCard: React.FC<Props> = ({ movie, genresMap, onClick }) => {
                 border: '1px solid #ddd',
                 borderRadius: 12,
                 overflow: 'hidden',
-                background: '#fff',
+                background: '#a54141',
                 boxShadow: '0 2px 6px rgba(0,0,0,.05)',
             }}
         >
-            <div style={{ height: 380, background: '#f0f0f0' }}>
+            <div style={{ height: 380, background: '#d1c1c1' }}>
                 {poster ? (
                     <img src={poster} alt={movie.title} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
                 ) : (
